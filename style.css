@@ -12,6 +12,7 @@ body {
         src: url('CenturyGothic.woff2') format('woff2'),
              url('CenturyGothic.woff') format('woff');
     }
+}
 
 header {
     position: fixed;
