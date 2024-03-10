@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', sans-serif;
+    background-image: url('img/1.jpg');
+    background-color: rgb(123, 102, 50);
+    color: rgb(220, 212, 212);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Century Gothic', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: rgba(57, 131, 181, 0.416); 
+    border: 2px solid #fff; 
+    transition: background-color 0.3s ease; 
+    border-radius: 15px;
+    
+}
+.main a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Century Gothic', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 80%;
+    background-color: rgba(57, 131, 181, 0.416); 
+    border: 2px solid #fff; 
+    transition: background-color 0.3s ease; 
+    border-radius: 15px;
+    
+}
+
+.header-content a:hover {
+    background-color: rgba(255, 255, 255, 0.386); 
+    transform: scale(1.1);
+}
+
+.main {
+    display: flex;
+    font-family: 'Century Gothic', sans-serif;
+    align-items: center;
+    margin-top: 70px;
+    margin-left:5%;
+    margin-right:5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.content {
+    margin-left:2%;
+    margin-top: 0;
+    max-width: 50%;
+    z-index:55;
+    font-family: 'Century Gothic', sans-serif;
+    animation: slideInRight 2s ease forwards;
+}
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.image {
+    width: 40%; 
+    height: 50%;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+h1 {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 60px; 
+    margin: 0;
+}
+@media only screen and (max-width: 768px) {
+    .main {
+        font-family: 'Century Gothic', sans-serif;
+        flex-direction: column; 
+    }
+    .main .explore {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    .content {
+        max-width: 100%;
+        margin-left: 0; 
+        text-align: center; 
+    }
+    .image {
+        width: 100%; 
+        margin: 20px 0; 
+    }
+    h1 {
+        font-size: 30px; 
+    }
+}
+p, h1, h2, h3, h4, h5, h6 {
+    cursor: default; 
+}
+.gallery {
+    margin-top: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 200px; 
+    height: 50%; 
+}
+.contact-container {
+    text-align: center;
+}
+
+.contact {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #00000000;
+    padding: 30px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 35x;
+    border-radius: 50%;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+}
