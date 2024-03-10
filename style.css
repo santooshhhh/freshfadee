@@ -6,11 +6,12 @@ body {
     background-color: rgb(123, 102, 50);
     color: rgb(220, 212, 212);
 }
-@font-face {
-    font-family: 'Century Gothic';
-    src: url('./fonts/CenturyGothic.woff2') format('woff2'),
-         url('./fonts/CenturyGothic.woff') format('woff');
-}
+@supports (-webkit-appearance:none) {
+    @font-face {
+        font-family: 'Century Gothic';
+        src: url('CenturyGothic.woff2') format('woff2'),
+             url('CenturyGothic.woff') format('woff');
+    }
 
 header {
     position: fixed;
