@@ -6,7 +6,7 @@ body {
     background-color: rgb(123, 102, 50);
     color: rgb(220, 212, 212);
 }
-@supports (-webkit-appearance:none) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: 'Century Gothic';
         src: url('CenturyGothic.woff2') format('woff2'),
